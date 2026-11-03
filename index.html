@@ -31,7 +31,6 @@ body {
     width: 100%;
 }
 
-
 .transit-card {
     background-color: #141c2e;
     border-radius: 12px;
@@ -204,7 +203,7 @@ const RT_REFRESH_MS = 30000;
 const NB_DEPARTS = 8;
 
 let payload = null;        // horaires.json
-let live = null;           // { fetchedAt, data:{l2:[...]} } issu du flux direct
+let live = null;           // { fetchedAt, data:{pl:[...]} } issu du flux direct
 let rtSkip = 0;            // cycles à sauter après une erreur (évite de marteler le serveur)
 
 // ---- décodeur protobuf minimal (GTFS-RT) ----
